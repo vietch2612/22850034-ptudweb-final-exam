@@ -1,0 +1,35 @@
+<div id="content">
+  <div id="sidebar">
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <p>consectetur adipiscing elit. Nullam euismod varius elementum. Suspendisse
+      potenti. Maecenas sed dolor eget erat vehicula aliquam sed quis ante.
+      Etiam feugiat urna eu ligula vulputate in porta ipsum tristique. Class
+      aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+      himenaeos. Nulla placerat fermentum nibh, a aliquet nulla imperdiet in.
+      Nam mattis molestie massa a dignissim. Proin in sodales dui. Phasellus
+      elit erat, ornare in eleifend quis, aliquet id est. Nunc adipiscing augue
+      porta sem congue vitae suscipit odio hendrerit. Aliquam id justo et elit
+      ultricies gravida.
+    </p>
+    <div class="featured">
+      <a href="filipino.html"><img
+          src="images/new-oriental-mixed.jpg"
+          alt=""
+        /></a>
+    </div>
+  </div>
+  <div id="menu">
+    <h2>Menu</h2>
+    <ul>
+      {{#each menu}}
+        <li>
+          <h4><a href="/menu/{{id}}">{{name}}</a></h4>
+          <h5>{{summary}}</h5>
+          <p>{{description}}</p>
+          <a href="/menu/{{id}}"><img src="{{imagepath}}" alt="Image" /></a>
+        </li>
+      {{/each}}
+    </ul>
+    <a href="/menu">view all menu</a>
+  </div>
+</div>

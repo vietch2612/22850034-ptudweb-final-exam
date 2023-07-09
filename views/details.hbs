@@ -1,0 +1,56 @@
+<div id="content">
+  <div id="sidebar">
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <p>consectetur adipiscing elit. Nullam euismod varius elementum. Suspendisse
+      potenti. Maecenas sed dolor eget erat vehicula aliquam sed quis ante.
+      Etiam feugiat urna eu ligula vulputate in porta ipsum tristique. Class
+      aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+      himenaeos. Nulla placerat fermentum nibh, a aliquet nulla imperdiet in.
+      Nam mattis molestie massa a dignissim. Proin in sodales dui. Phasellus
+      elit erat, ornare in eleifend quis, aliquet id est. Nunc adipiscing augue
+      porta sem congue vitae suscipit odio hendrerit. Aliquam id justo et elit
+      ultricies gravida.
+    </p>
+    <div class="featured">
+      <a href="filipino.html"><img
+          src="images/new-oriental-mixed.jpg"
+          alt=""
+        /></a>
+    </div>
+  </div>
+  <div id="menu">
+    <h2>Menu</h2>
+    {{#with menu}}
+      <div>
+        <div class="Vietnamese">
+          <h4>{{name}}</h4>
+          <h5>{{summary}}</h5>
+          <p>{{description}}</p>
+
+          <h6>{{name}}</h6>
+
+          {{#each Products}}
+            <table class="first">
+              <tbody>
+                <tr>
+                  <td>
+                    <table>
+                      <tbody><tr>
+                          <td class="product">{{name}}</td>
+                          <td class="price">{{price}}</td>
+                        </tr>
+                        <tr>
+                          <td class="description">{{description}}</td>
+                        </tr>
+                      </tbody></table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          {{/each}}
+        </div>
+      </div>
+    {{/with}}
+    <a href="/menu">back to main menu</a>
+  </div>
+</div>
